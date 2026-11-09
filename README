@@ -54,8 +54,62 @@ vehicle-detection-traffic-analysis/
     └── traffic_benchmark_frame.jpg
 ```
 
-*Note: Generated output filenames depend on the script configuration. The input video is not necessarily included in the repository.*## 
+*Note: Generated output filenames depend on the script configuration. The input video is not necessarily included in the repository.*
 
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/chaimae8-lang/vehicle-detection-traffic-analysis.git
+cd vehicle-detection-traffic-analysis
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+```bash
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install ultralytics opencv-python torch numpy pandas
+```
+
+If a `requirements.txt` file is provided:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+Place your input video in the project directory.
+
+Example input:
+
+```text
+Cars_driving_at_night.webm
+```
+
+Run the detection pipeline:
+
+```bash
+python traffic_ai_optimization.py --video Cars_driving_at_night.webm
+```
 
 The script processes the video, detects vehicles, and generates output files according to its configuration.
 
@@ -102,5 +156,8 @@ This project is an educational prototype and has several possible improvements:
 Master's Student in Artificial Intelligence & Data Science
 
 - LinkedIn: [Chaimae Moujib](https://www.linkedin.com/in/chaimae-moujib)
+- GitHub: [chaimae8-lang](https://github.com/chaimae8-lang)
+
+---
 
 *This project was developed for educational and experimental purposes as part of my exploration of Computer Vision, Deep Learning, and intelligent transportation systems.*
